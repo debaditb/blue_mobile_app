@@ -1,10 +1,11 @@
-import 'package:blue_mobile_app/view/Utils.dart';
-import 'package:blue_mobile_app/view/account_screen.dart';
-import 'package:blue_mobile_app/view/book_screen.dart';
-import 'package:blue_mobile_app/view/favourite_screen.dart';
-import 'package:blue_mobile_app/view/home_screen.dart';
-import 'package:blue_mobile_app/view/info_screen.dart';
+import 'package:blue_mobile_app/account/account_screen.dart';
+import 'package:blue_mobile_app/book/book_screen.dart';
+import 'package:blue_mobile_app/info/info_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'common/utils.dart';
+import 'favourite/favourite_screen.dart';
+import 'home/view/home_screen.dart';
 
 class App extends StatefulWidget {
   @override

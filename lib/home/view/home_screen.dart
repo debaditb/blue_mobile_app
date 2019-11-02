@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 
-import 'app_drawer.dart';
+import '../../common/app_drawer.dart';
+
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -10,6 +12,10 @@ class HomeScreen extends StatelessWidget {
           title: const Text('Welcome to Flutter'),
         ),
         drawer: AppDrawer(),
-        body: Container());
+        body: Column(
+          children: <Widget>[
+
+          ],
+        ));
   }
 }

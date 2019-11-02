@@ -1,6 +1,6 @@
+import 'package:blue_mobile_app/common/app_drawer.dart';
 import 'package:flutter/material.dart';
 
-import 'app_drawer.dart';
 
 class AccountScreen extends StatelessWidget {
   @override

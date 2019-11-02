@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_drawer.dart';
+import '../common/app_drawer.dart';
 
 class FavouriteScreen extends StatelessWidget {
   @override

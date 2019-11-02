@@ -13,7 +13,7 @@ class AppDrawer extends StatelessWidget {
           ),
           ListTile(title: Text("Change Location")),
           ListTile(title: Text("My profile"), trailing: Icon(Icons.add)),
-          ListTile(title: Text("Add service"), trailing: Icon(Icons.add)),
+          ListTile(title: Text("Add home.service"), trailing: Icon(Icons.add)),
           ListTile(title: Text("My services"), trailing: Icon(Icons.add)),
           ListTile(title: Text("Help"), trailing: Icon(Icons.add)),
           ListTile(title: Text("Information"), trailing: Icon(Icons.add))

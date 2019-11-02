@@ -1,5 +1,5 @@
-import 'package:blue_mobile_app/view/utils.dart';
-import 'package:blue_mobile_app/view/app.dart';
+import 'package:blue_mobile_app/common/utils.dart';
+import 'package:blue_mobile_app/app.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
