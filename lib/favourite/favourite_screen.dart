@@ -6,10 +6,10 @@ class FavouriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
-        ),
-        drawer: AppDrawer(),
+//        appBar: AppBar(
+//          title: const Text('Welcome to Flutter'),
+//        ),
+//        drawer: AppDrawer(),
         body: Container());
   }
 }
