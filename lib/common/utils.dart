@@ -12,6 +12,9 @@ class HexColor {
     return int.parse(buffer.toString(), radix: 16);
   }
 
+  static Color getColorFromHex(String hexString){
+    return Color(fromHex(hexString));
+  }
   static Map<int, Color> color = {
     50: Color.fromRGBO(43, 40, 124, .1),
     100: Color.fromRGBO(43, 40, 124, .2),
