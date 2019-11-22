@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:blue_mobile_app/common/utils.dart';
+import 'package:blue_mobile_app/discovery/discovery_customer_information_hygiene.dart';
+import 'package:blue_mobile_app/common/custom_app_bar.dart';
 
 class DiscoveryCustomerInformation extends StatelessWidget {
 
-  final String flow;
-
-  DiscoveryCustomerInformation(this.flow);
-
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
         backgroundColor: HexColor.getColorFromHex("#2B287C"),
+        appBar: CustomAppBar.getCustomAppBar(context),
         body: DefaultTabController(
           length: 6,
           child: Scaffold(
@@ -41,7 +41,7 @@ class DiscoveryCustomerInformation extends StatelessWidget {
               color: Colors.grey,
               child: TabBarView(
                 children: [
-                  Icon(Icons.directions_car),
+                  DiscoveryCustomerInformationHygiene(),
                   Icon(Icons.directions_transit),
                   Icon(Icons.directions_bike),
                   Icon(Icons.directions_bike),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:blue_mobile_app/common/utils.dart';
 import 'package:blue_mobile_app/discovery/discovery_customer_information.dart';
+import 'package:blue_mobile_app/dto/review_dto.dart';
 
 class HomePageServiceBanner extends StatelessWidget {
 
@@ -18,7 +19,13 @@ class HomePageServiceBanner extends StatelessWidget {
   HomePageServiceBanner(this.bannerPic,this.bannerText,this.buttonText, this.textColor, this.flow);
 
   Widget build(context) {
-
+    List<ReviewDTO> reviewComments = new List();
+    reviewComments.add(ReviewDTO("TestReview", "Kolkata", "Kolkata","Review comment,Review comment,Review comment,Review comment,Review comment,Review comment,"));
+    reviewComments.add(ReviewDTO("TestReview", "Kolkata", "Kolkata","Review comment,Review comment,Review comment,Review comment,Review comment,Review comment,"));
+    reviewComments.add(ReviewDTO("TestReview", "Kolkata", "Kolkata","Review comment,Review comment,Review comment,Review comment,Review comment,Review comment,"));
+    reviewComments.add(ReviewDTO("TestReview", "Kolkata", "Kolkata","Review comment,Review comment,Review comment,Review comment,Review comment,Review comment,"));
+    reviewComments.add(ReviewDTO("TestReview", "Kolkata", "Kolkata","Review comment,Review comment,Review comment,Review comment,Review comment,Review comment,"));
+    reviewComments.add(ReviewDTO("TestReview", "Kolkata", "Kolkata","Review comment,Review comment,Review comment,Review comment,Review comment,Review comment,"));
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ClipRRect(
@@ -52,7 +59,7 @@ class HomePageServiceBanner extends StatelessWidget {
                                 child: FlatButton(
                                   padding: EdgeInsets.only(left: 25.0,right: 25.0,),
                                   onPressed: (){
-                                    Navigator.push(context, MaterialPageRoute(builder: (context) => DiscoveryCustomerInformation(this.flow)));
+                                    Navigator.pushNamed(context, '/discovery-customer-information', arguments: {'reviewComments':reviewComments});
                                   },
                                   shape: RoundedRectangleBorder(
                                       side: BorderSide(color: this.textColor, width: 1, style: BorderStyle.solid), borderRadius: BorderRadius.circular(20)),

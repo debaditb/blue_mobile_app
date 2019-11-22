@@ -29,5 +29,6 @@ class HexColor {
   };
 
   static MaterialColor colorCustom = MaterialColor(HexColor.fromHex("#2B287C"), color);
+  static MaterialColor colorGold = MaterialColor(HexColor.fromHex("#D4AF37"), color);
 
 }
